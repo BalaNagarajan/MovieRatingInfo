@@ -2,8 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b0f5c94-0d54-45e5-9d0c-259bed631037" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../ArtistInfo/.gradle/6.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../ArtistInfo/.gradle/6.3/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ArtistInfo/.gradle/6.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../ArtistInfo/.gradle/6.3/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ArtistInfo/.gradle/6.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../ArtistInfo/.gradle/6.3/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ArtistInfo/.gradle/6.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../ArtistInfo/.gradle/6.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ArtistInfo/.gradle/6.3/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../ArtistInfo/.gradle/6.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ArtistInfo/.gradle/6.3/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../ArtistInfo/.gradle/6.3/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ArtistInfo/.gradle/6.3/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../ArtistInfo/.gradle/6.3/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ArtistInfo/.gradle/6.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../ArtistInfo/.gradle/6.3/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ArtistInfo/.gradle/6.3/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../ArtistInfo/.gradle/6.3/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ArtistInfo/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../ArtistInfo/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ArtistInfo/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ArtistInfo/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ArtistInfo/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ArtistInfo/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ArtistInfo/.idea/sonarlint/issuestore/8/a/8a462d20d5f5989c2f51d4e1b1f2a406582e8f56" beforeDir="false" afterPath="$PROJECT_DIR$/../ArtistInfo/.idea/sonarlint/issuestore/8/a/8a462d20d5f5989c2f51d4e1b1f2a406582e8f56" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ArtistInfo/.idea/sonarlint/issuestore/a/2/a2b4882d95392dcae31295142c60e758abf7bede" beforeDir="false" afterPath="$PROJECT_DIR$/../ArtistInfo/.idea/sonarlint/issuestore/a/2/a2b4882d95392dcae31295142c60e758abf7bede" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ArtistInfo/.idea/sonarlint/issuestore/d/7/d79a19d18dd4eed7b5078333e4337b53c467ee3c" beforeDir="false" afterPath="$PROJECT_DIR$/../ArtistInfo/.idea/sonarlint/issuestore/d/7/d79a19d18dd4eed7b5078333e4337b53c467ee3c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ArtistInfo/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../ArtistInfo/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/jcircle/ratinginfo/MovieRatingInfoApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/jcircle/ratinginfo/controller/InfoController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/jcircle/ratinginfo/request/InfoRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/jcircle/ratinginfo/response/InfoResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/jcircle/ratinginfo/utils/CommonUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/jcircle/movieinfo/MovieInfoApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/jcircle/artistinfo/ArtistInfoApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/jcircle/artistinfo/controller/InfoController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/jcircle/artistinfo/request/InfoRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/jcircle/artistinfo/response/InfoResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/jcircle/artistinfo/utils/CommonUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jcircle/ratinginfo/model/ArtistDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jcircle/ratinginfo/model/ArtistDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jcircle/ratinginfo/service/impl/MovieRatingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jcircle/ratinginfo/service/impl/MovieRatingServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,9 +43,34 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/../ArtistInfo">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/../MovieInfo">
+      <ProjectState />
+    </projectState>
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -25,15 +82,34 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.MovieRatingInfoApplication">
+    <configuration name="ArtistInfoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ArtistInfo.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jcircle.artistinfo.ArtistInfoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MovieInfoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="MovieInfo.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jcircle.movieinfo.MovieInfoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MovieRatingInfoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="MovieRatingInfo.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.jcircle.ratinginfo.MovieRatingInfoApplication" />
@@ -68,6 +144,15 @@
       <workItem from="1585619410120" duration="597000" />
       <workItem from="1585670892198" duration="4000" />
       <workItem from="1585961861138" duration="44000" />
+      <workItem from="1586223796814" duration="14000" />
+      <workItem from="1586223830905" duration="822000" />
+      <workItem from="1586300212869" duration="53000" />
+      <workItem from="1586300654374" duration="601000" />
+      <workItem from="1586460955495" duration="10000" />
+      <workItem from="1586460987426" duration="905000" />
+      <workItem from="1586462594630" duration="77000" />
+      <workItem from="1586462729008" duration="30000" />
+      <workItem from="1586462979324" duration="2898000" />
     </task>
     <servers />
   </component>
@@ -75,9 +160,57 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="496" y="359" key="com.intellij.ide.util.TipDialog" timestamp="1585670892509">
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom" timestamp="1586470189546">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="496" y="359" key="com.intellij.ide.util.TipDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1585670892509" />
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1586470189546" />
+    <state width="1638" height="295" key="GridCell.Tab.0.center" timestamp="1586470189545">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="295" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1586470189545" />
+    <state width="1638" height="295" key="GridCell.Tab.0.left" timestamp="1586470189545">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="295" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1586470189545" />
+    <state width="1638" height="295" key="GridCell.Tab.0.right" timestamp="1586470189546">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="295" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1586470189546" />
+    <state width="1638" height="295" key="GridCell.Tab.1.bottom" timestamp="1586470189548">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="295" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1586470189548" />
+    <state width="1638" height="295" key="GridCell.Tab.1.center" timestamp="1586470189547">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="295" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1586470189547" />
+    <state width="1638" height="295" key="GridCell.Tab.1.left" timestamp="1586470189547">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="295" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1586470189547" />
+    <state width="1638" height="295" key="GridCell.Tab.1.right" timestamp="1586470189548">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="295" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1586470189548" />
+    <state x="469" y="229" key="NewModule_or_Project.wizard" timestamp="1586461413179">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="469" y="229" key="NewModule_or_Project.wizard/0.0.1680.1050@0.0.1680.1050" timestamp="1586461413179" />
+    <state x="349" y="164" key="SettingsEditor" timestamp="1586463378578">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="349" y="164" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1586463378578" />
+    <state x="496" y="359" key="com.intellij.ide.util.TipDialog" timestamp="1586463011585">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="496" y="359" key="com.intellij.ide.util.TipDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1586463011585" />
+    <state x="234" y="130" key="new project wizard" timestamp="1586461343900">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="234" y="130" key="new project wizard/0.0.1680.1050@0.0.1680.1050" timestamp="1586461343900" />
+    <state x="505" y="248" key="run.anything.popup" timestamp="1586461072804">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="505" y="248" key="run.anything.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1586461072804" />
   </component>
 </project>

@@ -1,5 +1,6 @@
 package com.jcircle.ratinginfo.service.impl;
 
+import com.jcircle.ratinginfo.request.ArtistRequest;
 import com.jcircle.ratinginfo.request.MovieRequest;
 import com.jcircle.ratinginfo.request.RatingRequest;
 import com.jcircle.ratinginfo.response.ArtistResponse;
@@ -28,20 +29,24 @@ public class MovieRatingServiceImpl extends BaseService implements IMovieRatingS
     @Override
     public RatingResponse getMovieRatingInformation(RatingRequest ratingRequest) {
 
-        RatingResponse ratingResponse = null;
+        RatingResponse ratingResponse = new RatingResponse();
 
         List<String> movieIdList = null;
         List<String> artistIdList = null;
         MovieResponse movieResponse = null;
+        ArtistResponse artistResponse = null;
+
 
         if (CommonUtils.isNotEmpty(ratingRequest.getMovieIdList())) {
             movieIdList = ratingRequest.getMovieIdList();
             movieResponse = this.getMovieInfo(movieIdList);
-            ratingResponse = new RatingResponse();
             ratingResponse.setMovieList(movieResponse.getMovieList());
         }
         if (CommonUtils.isNotEmpty(ratingRequest.getArtistIdList())) {
             artistIdList = ratingRequest.getArtistIdList();
+            artistResponse = this.getArtistInfo(artistIdList);
+            ratingResponse.setArtistList(artistResponse.getArtistList());
+
         }
 
         return ratingResponse;
@@ -49,6 +54,8 @@ public class MovieRatingServiceImpl extends BaseService implements IMovieRatingS
 
     /**
      *
+     * @param movieIdList
+     * @return
      */
     protected MovieResponse getMovieInfo(List movieIdList) {
 
@@ -70,6 +77,12 @@ public class MovieRatingServiceImpl extends BaseService implements IMovieRatingS
     protected ArtistResponse getArtistInfo(List artistIdList) {
 
         ArtistResponse artistResponseObj = null;
+        RestTemplate restTemplate = this.getRestTemplate();
+        ArtistRequest artistRequest = this.populateArtistRequest(artistIdList);
+        artistResponseObj = restTemplate.postForObject("http://localhost:8081/ArtistInfo/api/v1/artist/info",artistRequest,ArtistResponse.class);
+        if (artistResponseObj != null && CommonUtils.isNotEmpty(artistResponseObj.getArtistList())) {
+
+        }
 
         return artistResponseObj;
     }
@@ -79,6 +92,14 @@ public class MovieRatingServiceImpl extends BaseService implements IMovieRatingS
         movieRequest.setMovieIdList(movieIdList);
 
         return movieRequest;
+
+    }
+
+    protected ArtistRequest populateArtistRequest(List artistIdList) {
+        ArtistRequest artistRequest = new ArtistRequest();
+        artistRequest.setArtistIdList(artistIdList);
+
+        return artistRequest;
 
     }
 
