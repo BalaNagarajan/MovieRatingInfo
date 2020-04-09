@@ -18,24 +18,6 @@
       <change beforePath="$PROJECT_DIR$/../ArtistInfo/.idea/sonarlint/issuestore/a/2/a2b4882d95392dcae31295142c60e758abf7bede" beforeDir="false" afterPath="$PROJECT_DIR$/../ArtistInfo/.idea/sonarlint/issuestore/a/2/a2b4882d95392dcae31295142c60e758abf7bede" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ArtistInfo/.idea/sonarlint/issuestore/d/7/d79a19d18dd4eed7b5078333e4337b53c467ee3c" beforeDir="false" afterPath="$PROJECT_DIR$/../ArtistInfo/.idea/sonarlint/issuestore/d/7/d79a19d18dd4eed7b5078333e4337b53c467ee3c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ArtistInfo/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../ArtistInfo/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/jcircle/ratinginfo/MovieRatingInfoApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/jcircle/ratinginfo/controller/InfoController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/jcircle/ratinginfo/request/InfoRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/jcircle/ratinginfo/response/InfoResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/jcircle/ratinginfo/utils/CommonUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/jcircle/movieinfo/MovieInfoApplicationTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/jcircle/artistinfo/ArtistInfoApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/jcircle/artistinfo/controller/InfoController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/jcircle/artistinfo/request/InfoRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/jcircle/artistinfo/response/InfoResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/jcircle/artistinfo/utils/CommonUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jcircle/ratinginfo/model/ArtistDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jcircle/ratinginfo/model/ArtistDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jcircle/ratinginfo/service/impl/MovieRatingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jcircle/ratinginfo/service/impl/MovieRatingServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +134,7 @@
       <workItem from="1586460987426" duration="905000" />
       <workItem from="1586462594630" duration="77000" />
       <workItem from="1586462729008" duration="30000" />
-      <workItem from="1586462979324" duration="2898000" />
+      <workItem from="1586462979324" duration="3051000" />
     </task>
     <servers />
   </component>
