@@ -10,14 +10,22 @@ import com.jcircle.ratinginfo.service.BaseService;
 import com.jcircle.ratinginfo.service.IMovieRatingService;
 import com.jcircle.ratinginfo.utils.CommonUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.influx.InfluxDbProperties;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
+import org.springframework.web.reactive.function.BodyInserters;
+import org.springframework.web.reactive.function.client.WebClient;
+import reactor.core.publisher.Flux;
 
 import java.util.List;
 
 @Service("movieRatingService")
 public class MovieRatingServiceImpl extends BaseService implements IMovieRatingService {
+
+
+    @Autowired
+    WebClient.Builder webClientBuilder;
 
     public MovieRatingServiceImpl(RestTemplateBuilder restTemplateBuilder) {
         super(restTemplateBuilder);
@@ -59,10 +67,15 @@ public class MovieRatingServiceImpl extends BaseService implements IMovieRatingS
      */
     protected MovieResponse getMovieInfo(List movieIdList) {
 
-        MovieResponse movieResponseObj = null;
+         MovieResponse  movieResponseObj = null;
         RestTemplate restTemplate = this.getRestTemplate();
         MovieRequest movieRequest = this.populateMovieRequest(movieIdList);
-        movieResponseObj = restTemplate.postForObject("http://localhost:8082/MovieInfo/api/v1/movies/info", movieRequest, MovieResponse.class);
+        //To perform  the REST TEMPLATE CALL
+      //  movieResponseObj = restTemplate.postForObject("http://localhost:8082/MovieInfo/api/v1/movies/info", movieRequest, MovieResponse.class);
+        //Using WebClient - sync call
+        movieResponseObj = webClientBuilder.build().post().uri("http://localhost:8082/MovieInfo/api/v1/movies/info").bodyValue(movieRequest).retrieve().bodyToMono(MovieResponse.class).block();
+
+
         if (movieResponseObj != null && CommonUtils.isNotEmpty(movieResponseObj.getMovieList())) {
 
         }
