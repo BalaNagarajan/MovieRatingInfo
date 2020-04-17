@@ -33,6 +33,21 @@ dependencies {
 
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
+
+	//DROOLS Dependencies
+	// https://mvnrepository.com/artifact/org.drools/drools-core
+	compile group: 'org.drools', name: 'drools-core', version: '7.36.0.Final'
+	// https://mvnrepository.com/artifact/org.drools/drools-compiler
+	compile group: 'org.drools', name: 'drools-compiler', version: '7.36.0.Final'
+	// https://mvnrepository.com/artifact/org.drools/drools-compiler
+	compile group: 'org.drools', name: 'drools-compiler', version: '7.36.0.Final'
+	//Support for decision tables
+	// https://mvnrepository.com/artifact/org.drools/drools-decisiontables
+	compile group: 'org.drools', name: 'drools-decisiontables', version: '7.36.0.Final'
+
+
+
+
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}

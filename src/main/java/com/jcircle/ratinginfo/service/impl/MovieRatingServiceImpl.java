@@ -3,12 +3,15 @@ package com.jcircle.ratinginfo.service.impl;
 import com.jcircle.ratinginfo.request.ArtistRequest;
 import com.jcircle.ratinginfo.request.MovieRequest;
 import com.jcircle.ratinginfo.request.RatingRequest;
+import com.jcircle.ratinginfo.request.RatingTypeRequest;
 import com.jcircle.ratinginfo.response.ArtistResponse;
 import com.jcircle.ratinginfo.response.MovieResponse;
 import com.jcircle.ratinginfo.response.RatingResponse;
+import com.jcircle.ratinginfo.response.RatingTypeResponse;
 import com.jcircle.ratinginfo.service.BaseService;
 import com.jcircle.ratinginfo.service.IMovieRatingService;
 import com.jcircle.ratinginfo.utils.CommonUtils;
+import org.kie.api.runtime.KieSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.influx.InfluxDbProperties;
 import org.springframework.boot.web.client.RestTemplateBuilder;
@@ -27,6 +30,9 @@ public class MovieRatingServiceImpl extends BaseService implements IMovieRatingS
     @Autowired
     WebClient.Builder webClientBuilder;
 
+    @Autowired
+    private KieSession kieSession;
+
     public MovieRatingServiceImpl(RestTemplateBuilder restTemplateBuilder) {
         super(restTemplateBuilder);
     }
@@ -43,7 +49,6 @@ public class MovieRatingServiceImpl extends BaseService implements IMovieRatingS
         List<String> artistIdList = null;
         MovieResponse movieResponse = null;
         ArtistResponse artistResponse = null;
-
 
         if (CommonUtils.isNotEmpty(ratingRequest.getMovieIdList())) {
             movieIdList = ratingRequest.getMovieIdList();
@@ -62,19 +67,16 @@ public class MovieRatingServiceImpl extends BaseService implements IMovieRatingS
 
     /**
      *
-     * @param movieIdList
-     * @return
      */
     protected MovieResponse getMovieInfo(List movieIdList) {
 
-         MovieResponse  movieResponseObj = null;
+        MovieResponse movieResponseObj = null;
         RestTemplate restTemplate = this.getRestTemplate();
         MovieRequest movieRequest = this.populateMovieRequest(movieIdList);
         //To perform  the REST TEMPLATE CALL
-      //  movieResponseObj = restTemplate.postForObject("http://localhost:8082/MovieInfo/api/v1/movies/info", movieRequest, MovieResponse.class);
+        //  movieResponseObj = restTemplate.postForObject("http://localhost:8082/MovieInfo/api/v1/movies/info", movieRequest, MovieResponse.class);
         //Using WebClient - sync call
         movieResponseObj = webClientBuilder.build().post().uri("http://localhost:8082/MovieInfo/api/v1/movies/info").bodyValue(movieRequest).retrieve().bodyToMono(MovieResponse.class).block();
-
 
         if (movieResponseObj != null && CommonUtils.isNotEmpty(movieResponseObj.getMovieList())) {
 
@@ -92,7 +94,7 @@ public class MovieRatingServiceImpl extends BaseService implements IMovieRatingS
         ArtistResponse artistResponseObj = null;
         RestTemplate restTemplate = this.getRestTemplate();
         ArtistRequest artistRequest = this.populateArtistRequest(artistIdList);
-        artistResponseObj = restTemplate.postForObject("http://localhost:8081/ArtistInfo/api/v1/artist/info",artistRequest,ArtistResponse.class);
+        artistResponseObj = restTemplate.postForObject("http://localhost:8081/ArtistInfo/api/v1/artist/info", artistRequest, ArtistResponse.class);
         if (artistResponseObj != null && CommonUtils.isNotEmpty(artistResponseObj.getArtistList())) {
 
         }
@@ -114,6 +116,17 @@ public class MovieRatingServiceImpl extends BaseService implements IMovieRatingS
 
         return artistRequest;
 
+    }
+
+
+    public RatingTypeRequest getRatingsRecommendation(RatingTypeRequest ratingTypeRequest) {
+
+        RatingTypeResponse ratingTypeResponse = null;
+        kieSession.insert(ratingTypeRequest);
+
+        kieSession.fireAllRules();
+
+        return ratingTypeRequest;
     }
 
 

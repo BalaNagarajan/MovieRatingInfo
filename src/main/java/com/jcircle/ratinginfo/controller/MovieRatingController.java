@@ -1,8 +1,10 @@
 package com.jcircle.ratinginfo.controller;
 
 import com.jcircle.ratinginfo.request.RatingRequest;
+import com.jcircle.ratinginfo.request.RatingTypeRequest;
 import com.jcircle.ratinginfo.response.BaseResponse;
 import com.jcircle.ratinginfo.response.RatingResponse;
+import com.jcircle.ratinginfo.response.RatingTypeResponse;
 import com.jcircle.ratinginfo.service.IMovieRatingService;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
@@ -37,5 +39,24 @@ public class MovieRatingController {
         return responseEntityObj;
 
     }
+
+
+    @CrossOrigin
+    @PostMapping(value = "/v1/movie/ratings")
+    @ApiOperation(value = "Get Ratings Recommendation",
+        notes = "What is your age.")
+    public ResponseEntity<RatingTypeRequest> getRatingsRecommendation(@ApiParam(value = " {\n"
+        + "  \"age\": \"1 or 8 or 15\"\n"
+        + "}") @RequestBody RatingTypeRequest ratingTypeRequest) {
+
+        ResponseEntity<RatingTypeRequest> responseEntityObj = null;
+
+        RatingTypeRequest ratingTypeRequestObj = movieRatingService.getRatingsRecommendation(ratingTypeRequest);
+
+        responseEntityObj = new ResponseEntity(ratingTypeRequestObj, HttpStatus.OK);
+        return responseEntityObj;
+
+    }
+
 
 }

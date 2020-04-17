@@ -1,0 +1,42 @@
+package KieRule;
+
+import com.jcircle.ratinginfo.request.RatingTypeRequest;
+import com.jcircle.ratinginfo.response.RatingTypeResponse;
+import java.util.List;
+import java.util.ArrayList;
+
+
+
+
+rule "For General and Parental Guidence Audiences"
+when
+  $ratingTypeRequest : RatingTypeRequest(age > 1 && age <10);
+then
+  List<String> categoryList = new ArrayList<String>();
+  categoryList.add("G");
+  categoryList.add("PG");
+  $ratingTypeRequest.setCategory(categoryList);
+end;
+
+rule "For 13 years Parental Guidence Audiences"
+when
+  $ratingTypeRequest : RatingTypeRequest(age > 10 && age <=13);
+then
+  List<String> categoryList = new ArrayList<String>();
+  categoryList.add("G");
+  categoryList.add("PG");
+  categoryList.add("PG13");
+  $ratingTypeRequest.setCategory(categoryList);
+end;
+
+rule "For Adults"
+when
+  $ratingTypeRequest : RatingTypeRequest(age > 18 && age <=65);
+then
+  List<String> categoryList = new ArrayList<String>();
+  categoryList.add("G");
+  categoryList.add("PG");
+  categoryList.add("PG13");
+  categoryList.add("R");
+  $ratingTypeRequest.setCategory(categoryList);
+end;
