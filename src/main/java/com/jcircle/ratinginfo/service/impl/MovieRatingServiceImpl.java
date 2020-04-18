@@ -1,13 +1,7 @@
 package com.jcircle.ratinginfo.service.impl;
 
-import com.jcircle.ratinginfo.request.ArtistRequest;
-import com.jcircle.ratinginfo.request.MovieRequest;
-import com.jcircle.ratinginfo.request.RatingRequest;
-import com.jcircle.ratinginfo.request.RatingTypeRequest;
-import com.jcircle.ratinginfo.response.ArtistResponse;
-import com.jcircle.ratinginfo.response.MovieResponse;
-import com.jcircle.ratinginfo.response.RatingResponse;
-import com.jcircle.ratinginfo.response.RatingTypeResponse;
+import com.jcircle.ratinginfo.request.*;
+import com.jcircle.ratinginfo.response.*;
 import com.jcircle.ratinginfo.service.BaseService;
 import com.jcircle.ratinginfo.service.IMovieRatingService;
 import com.jcircle.ratinginfo.utils.CommonUtils;
@@ -127,6 +121,17 @@ public class MovieRatingServiceImpl extends BaseService implements IMovieRatingS
         kieSession.fireAllRules();
 
         return ratingTypeRequest;
+    }
+
+    public CountryRatingResponse getCountryRatingRecommendation(CountryRatingRequest countryRatingRequest) {
+        CountryRatingResponse countryRatingResponse = new CountryRatingResponse();
+
+        kieSession.insert(countryRatingRequest);
+        kieSession.setGlobal("countryRatingResponse",countryRatingResponse);
+        kieSession.fireAllRules();
+
+
+        return countryRatingResponse;
     }
 
 

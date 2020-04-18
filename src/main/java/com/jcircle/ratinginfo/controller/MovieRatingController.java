@@ -1,8 +1,10 @@
 package com.jcircle.ratinginfo.controller;
 
+import com.jcircle.ratinginfo.request.CountryRatingRequest;
 import com.jcircle.ratinginfo.request.RatingRequest;
 import com.jcircle.ratinginfo.request.RatingTypeRequest;
 import com.jcircle.ratinginfo.response.BaseResponse;
+import com.jcircle.ratinginfo.response.CountryRatingResponse;
 import com.jcircle.ratinginfo.response.RatingResponse;
 import com.jcircle.ratinginfo.response.RatingTypeResponse;
 import com.jcircle.ratinginfo.service.IMovieRatingService;
@@ -57,6 +59,25 @@ public class MovieRatingController {
         return responseEntityObj;
 
     }
+
+    @CrossOrigin
+    @PostMapping(value = "/v1/country/movie/rating")
+    @ApiOperation(value = "Get Country Ratings Recommendation",
+        notes = "Enter Country Code.")
+    public ResponseEntity<CountryRatingResponse> getCountryRatingRecommendation(@ApiParam(value = " {\n"
+        + "  \"countryCode\": \"USA or JPN or IND or AUS\"\n"
+        + "  \"movieRatingFactor\": \"{ 'isViolent' : 'Y','violenceIntensity' : '4', 'isFrighteningImages' , 'Y', 'languageUsage' : 'Y' }\"\n"
+        + "}") @RequestBody CountryRatingRequest countryRatingRequest) {
+
+        ResponseEntity<CountryRatingResponse> responseEntityObj = null;
+
+        CountryRatingResponse countryRatingResponse = movieRatingService.getCountryRatingRecommendation(countryRatingRequest);
+
+        responseEntityObj = new ResponseEntity(countryRatingResponse, HttpStatus.OK);
+        return responseEntityObj;
+
+    }
+
 
 
 }

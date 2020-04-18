@@ -1,9 +1,10 @@
-package KieRule;
+/*package KieRule;
 
 import com.jcircle.ratinginfo.request.RatingTypeRequest;
 import com.jcircle.ratinginfo.response.RatingTypeResponse;
 import java.util.List;
 import java.util.ArrayList;
+
 
 
 
@@ -40,3 +41,5 @@ then
   categoryList.add("R");
   $ratingTypeRequest.setCategory(categoryList);
 end;
+
+*/

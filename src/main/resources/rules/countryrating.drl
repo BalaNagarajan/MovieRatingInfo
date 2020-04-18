@@ -1,0 +1,53 @@
+package  kieRule;
+
+import com.jcircle.ratinginfo.request.CountryRatingRequest;
+import com.jcircle.ratinginfo.response.CountryRatingResponse;
+import com.jcircle.ratinginfo.model.MovieRatingFactor
+import com.jcircle.ratinginfo.request.MovieRequest;
+
+global com.jcircle.ratinginfo.response.CountryRatingResponse countryRatingResponse;
+
+rule "Movie Rating for USA"
+when
+  $countryRatingRequest : CountryRatingRequest(countryCode == 'USA')
+then
+  MovieRatingFactor movieRatingFactor = $countryRatingRequest.getMovieRatingFactor();
+  if("Y".equalsIgnoreCase(movieRatingFactor.getIsFrighteningImages()) && "Y".equalsIgnoreCase(movieRatingFactor.getIsViolent()) && movieRatingFactor.getViolenceIntensity() >= 18 && "Y".equalsIgnoreCase(movieRatingFactor.getLanguageUsage())) {
+    countryRatingResponse.setRating("R");
+  }
+
+
+end;
+
+rule "Movie Rating for JPN"
+when
+  $countryRatingRequest : CountryRatingRequest(countryCode == 'JPN')
+then
+  MovieRatingFactor movieRatingFactor = $countryRatingRequest.getMovieRatingFactor();
+  if("N".equalsIgnoreCase(movieRatingFactor.getIsFrighteningImages()) && "N".equalsIgnoreCase(movieRatingFactor.getIsViolent()) && movieRatingFactor.getViolenceIntensity() < 7 && "N".equalsIgnoreCase(movieRatingFactor.getLanguageUsage())) {
+    countryRatingResponse.setRating("PG");
+  }
+end;
+
+
+rule "Movie Rating for IND"
+when
+  $countryRatingRequest : CountryRatingRequest(countryCode == 'IND')
+then
+  MovieRatingFactor movieRatingFactor = $countryRatingRequest.getMovieRatingFactor();
+  if("Y".equalsIgnoreCase(movieRatingFactor.getIsFrighteningImages()) && "N".equalsIgnoreCase(movieRatingFactor.getIsViolent()) && movieRatingFactor.getViolenceIntensity() > 7 && "Y".equalsIgnoreCase(movieRatingFactor.getLanguageUsage())) {
+    countryRatingResponse.setRating("PG13");
+  }
+
+
+end;
+
+rule "Movie Rating for AUS"
+when
+  $countryRatingRequest : CountryRatingRequest(countryCode == 'AUS')
+then
+ MovieRatingFactor movieRatingFactor = $countryRatingRequest.getMovieRatingFactor();
+  if("N".equalsIgnoreCase(movieRatingFactor.getIsFrighteningImages()) && "N".equalsIgnoreCase(movieRatingFactor.getIsViolent()) && movieRatingFactor.getViolenceIntensity() > 7 && "N".equalsIgnoreCase(movieRatingFactor.getLanguageUsage())) {
+     countryRatingResponse.setRating("G");
+  }
+end;
